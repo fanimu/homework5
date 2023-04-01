@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  </head>
+  <body class="bg-light">
+    <h2>Home Work 5</h2>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'reg')">Registrasi</button>
+      <button class="tablinks" onclick="openTab(event, 'ldaftar')">List Pendaftar</button>
+    </div>
+
+    <div id="reg" class="tabcontent">
+      <div class="container">
+        <h3>Registrasi</h3>
+        <hr />
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama :</label>
+              <input type="text" class="form-control teks" id="nama" />
+            </div>
+            <div class="mb-3">
+              <label for="umur" class="form-label">Umur :</label>
+              <input type="number" class="form-control" id="umur" />
+            </div>
+            <div class="mb-3">
+              <label for="usangu" class="form-label">Uang Sangu :</label>
+              <input type="number" class="form-control" id="usangu" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ldaftar" class="tabcontent">
+      <h3>List Pendaftar</h3>
+      <div id="show"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

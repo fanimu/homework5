@@ -91,7 +91,7 @@ function show() {
   }
 
   rata2fix = rata2 / arrDatanya.length;
-  outputHTML += '</table> <h3> Rata rata pendaftar memiliki uang sangu sebesar : ' + rupiah(jumlah) + ' dengan rata rata umur : ' + parseFloat(rata2fix).toFixed(1) + '</h3>';
+  outputHTML += '</table> <h3> Rata rata pendaftar memiliki uang sangu sebesar : ' + rupiah(jumlah) + '<br> Dengan rata rata umur : ' + parseFloat(rata2fix).toFixed(1) + '</h3>';
 
   document.querySelector('#show').innerHTML = outputHTML;
 }
